@@ -7,7 +7,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.jdom.JDOMException;
 import org.xml.sax.SAXException;
 
-import data.etre.Ennemi;
 import data.io.xml.XmlEtreLoad;
 
 public class Loader {

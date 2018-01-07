@@ -7,12 +7,10 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
-import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
 import app.Env;
-import data.etre.Ennemi;
 
 public class Bureau extends JFrame {
 	private static final long serialVersionUID = 590402232418031275L;
@@ -55,10 +53,10 @@ public class Bureau extends JFrame {
 
 		onglets.addTab("Système de jeu", onglet_1);
 		onglets.addTab("Bestiaire", onglet_2);
-		onglets.addTab("Combat", onglet_2);
-		onglets.addTab("Voyage", onglet_2);
-		onglets.addTab("Rencontre", onglet_2);
-		onglets.addTab("Bureau", onglet_3);
+		onglets.addTab("Combat", onglet_3);
+		onglets.addTab("Voyage", onglet_4);
+		onglets.addTab("Rencontre", onglet_5);
+		onglets.addTab("Bureau", onglet_6);
 		
 	
 		Token token = new TokenEtreEnnemi(Env.bdd.getListeEtreEnemmi().get(0));

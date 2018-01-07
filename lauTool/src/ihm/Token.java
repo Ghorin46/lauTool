@@ -5,9 +5,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 
 import javax.swing.JInternalFrame;
+import javax.swing.JPanel;
+import javax.swing.ToolTipManager;
 
 public class Token extends JInternalFrame {
 	private static final long serialVersionUID = 338578916173833956L;
+
+	protected	JPanel	panel;
 
 	public Token() {
 		super();
@@ -23,8 +27,19 @@ public class Token extends JInternalFrame {
 		
 		gereComportement();
 	}
+	
+	protected void afficheInfosDebut() {
+		panel = new JPanel();
+		panel.setLayout(null);
+	}
+	protected void afficheInfosFin() {
+		setContentPane(panel);
+		
+		ToolTipManager.sharedInstance().setInitialDelay(0);
+		ToolTipManager.sharedInstance().setDismissDelay(8000);
+	}
 
-	private void gereComportement() {
+ 	private void gereComportement() {
 		MouseAdapter adapterMouse = new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
