@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/sdamaster/!svn/ver/293/SDAMaster/trunk/lib/j3d
+END
+vecmath.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sdamaster/!svn/ver/293/SDAMaster/trunk/lib/j3d/vecmath.jar
+END
+j3dcore.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sdamaster/!svn/ver/293/SDAMaster/trunk/lib/j3d/j3dcore.jar
+END
+j3dutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sdamaster/!svn/ver/293/SDAMaster/trunk/lib/j3d/j3dutils.jar
+END
+Loader3DS1_2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sdamaster/!svn/ver/89/SDAMaster/trunk/lib/j3d/Loader3DS1_2.jar
+END

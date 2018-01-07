@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml
+END
+saxpath.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml/saxpath.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml/jdom.jar
+END
+jaxen-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml/jaxen-core.jar
+END
+jaxen-jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml/jaxen-jdom.jar
+END
+sax2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/sdamaster/!svn/ver/21/SDAMaster/trunk/lib/xml/sax2.jar
+END
