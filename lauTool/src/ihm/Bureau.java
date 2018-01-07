@@ -58,9 +58,10 @@ public class Bureau extends JFrame {
 		onglets.addTab("Rencontre", onglet_5);
 		onglets.addTab("Bureau", onglet_6);
 		
-	
+		onglet_6.setBackground(Env.desktop_couleur_fond);
+
 		Token token = new TokenEtreEnnemi(Env.bdd.getListeEtreEnemmi().get(0));
-		onglet_3.add(token);
+		onglet_6.add(token);
 		token.setVisible(true);
 		token.setEnabled(true);
 		token.setSize(200, 200);
@@ -72,7 +73,6 @@ public class Bureau extends JFrame {
 		onglets.setTabLayoutPolicy(JTabbedPane.WRAP_TAB_LAYOUT);
 		getContentPane().add(onglets);
 
-		onglet_3.setBackground(Env.desktop_couleur_fond);
 	}
 	
 	private void gererFermeture() {

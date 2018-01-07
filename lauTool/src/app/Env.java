@@ -60,7 +60,7 @@ public class Env {
 		desktop_couleur_fond	= new Color(90, 36, 36);
 		
 		
-		// police_defaut_nom		= "Justus-Roman.ttf";
+		police_defaut_nom		= new Font("Justus-Roman.ttf", Font.PLAIN, 9);
 	}
 	
 	public static ImageIcon getIconeAppli(String nom) {
