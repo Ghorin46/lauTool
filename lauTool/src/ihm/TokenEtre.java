@@ -20,7 +20,7 @@ public class TokenEtre extends Token {
 
 	protected void afficheInfos() {
 		lbNom 				= new JLabel(etre.toString());
-		lbNom.setFont(Env.police_defaut_nom);
+		lbNom.setFont(Env.police_defaut);
 		int taille_texte 	= lbNom.getFont().getSize() * lbNom.getText().length();	// Taille du texte en pixels
 		//int	texte_pos_x		= (fenetre_diametre/2)-(taille_texte/4)-5;
 		//if(texte_pos_x<0)	texte_pos_x=1;

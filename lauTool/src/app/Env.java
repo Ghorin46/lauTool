@@ -31,7 +31,9 @@ public class Env {
 	
 	public 	static	Color		desktop_couleur_fond	= new Color(90, 36, 36);
 	
-	public	static	Font		police_defaut_nom;
+	public	static	Font		police_defaut;
+	public	static	String		police_defaut_nom;
+	public	static	int			police_defaut_taille;
 	
 	static {
 		debug					= Boolean.FALSE;
@@ -60,7 +62,9 @@ public class Env {
 		desktop_couleur_fond	= new Color(90, 36, 36);
 		
 		
-		police_defaut_nom		= new Font("Justus-Roman.ttf", Font.PLAIN, 9);
+		police_defaut			= new Font("AndBasR.ttf", Font.PLAIN, 12);
+		police_defaut_nom		= "AndBasR.ttf";
+		police_defaut_taille	= 12;
 	}
 	
 	public static ImageIcon getIconeAppli(String nom) {

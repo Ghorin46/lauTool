@@ -16,7 +16,7 @@ public class Bureau extends JFrame {
 	private static final long serialVersionUID = 590402232418031275L;
 
 	private	JTabbedPane 		onglets;
-	private	JPanel				onglet_1;
+	private	OngletSystemeDeJeu	onglet_1;
 	private	JPanel				onglet_2;
 	private	JPanel				onglet_3;
 	private	JPanel				onglet_4;
@@ -43,7 +43,7 @@ public class Bureau extends JFrame {
 		// Contenu de la fenêtre
 		onglets				= new JTabbedPane();
 		
-		onglet_1			= new JPanel();
+		onglet_1			= new OngletSystemeDeJeu();
 		onglet_2			= new JPanel();
 		onglet_3			= new JPanel();
 		onglet_4			= new JPanel();
