@@ -22,7 +22,7 @@ public class Database {
 		listeEtreAnimal	= new ArrayList<Animal>();
 		
 	}
-	public void ajouteEnemi(Ennemi enemi) {
+	public void ajouteEnnemi(Ennemi enemi) {
 		if(!listeEtreEnemmi.contains(enemi)) {
 			listeEtreEnemmi.add(enemi);
 		}

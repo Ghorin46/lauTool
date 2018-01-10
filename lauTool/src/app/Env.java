@@ -9,6 +9,7 @@ import java.util.TreeMap;
 import javax.swing.ImageIcon;
 
 import outils.images.IconeJdr;
+import outils.images.ImageJdr;
 
 public class Env {
 	public	static	Boolean		debug;
@@ -21,11 +22,13 @@ public class Env {
 	public	static	String		rep_ressources;
 	public	static	String		rep_images;
 	public	static	String		rep_icones;
+	public	static	String		rep_tokens;
 	public	static	String		rep_data;
 	
 	public	static	String		data_fichier_etres;
 
 	public 	static Map<String, IconeJdr>		mapIconesAppli;			// ICONES DE L'APPLICATION
+	public 	static Map<String, ImageJdr>		mapImagesAppli;			// IMAGES DE L'APPLICATION
 	
 	public 	static	String		theme_UI;
 	
@@ -45,7 +48,8 @@ public class Env {
 		appli_home				= System.getProperty("user.dir");
 		rep_ressources			= appli_home + File.separator + "ressources";
 		rep_images				= rep_ressources + File.separator + "images";
-		rep_icones				= rep_images + File.separator + "icones";
+		rep_tokens				= rep_ressources + File.separator + "tokens";
+		rep_icones				= rep_ressources + File.separator + "icones";
 		rep_data				= rep_ressources + File.separator + "data";
 		
 		

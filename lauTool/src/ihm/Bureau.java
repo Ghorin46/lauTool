@@ -18,7 +18,7 @@ public class Bureau extends JFrame {
 	private	JTabbedPane 		onglets;
 	private	OngletSystemeDeJeu	onglet_1;
 	private	JPanel				onglet_2;
-	private	JPanel				onglet_3;
+	private	OngletCombat		onglet_3;
 	private	JPanel				onglet_4;
 	private	JPanel				onglet_5;
 	private	JDesktopPane		onglet_6;
@@ -45,7 +45,7 @@ public class Bureau extends JFrame {
 		
 		onglet_1			= new OngletSystemeDeJeu();
 		onglet_2			= new JPanel();
-		onglet_3			= new JPanel();
+		onglet_3			= new OngletCombat();
 		onglet_4			= new JPanel();
 		onglet_5			= new JPanel();
 		onglet_6			= new JDesktopPane();

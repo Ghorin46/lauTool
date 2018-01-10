@@ -46,6 +46,7 @@ public class XmlEtreLoad {
 		int		parade			= 0;
 		int		bouclier		= 0;
 		int		armure			= 0;
+		String	tokenFileName	= "";
 
 		nom						= XmlIO.getValeurElement("./@nom", racine);
 		type					= XmlIO.getValeurElement("./@type", racine);
@@ -62,9 +63,11 @@ public class XmlEtreLoad {
 			parade				= Integer.valueOf(XmlIO.getValeurElement("./parade", racine));
 			bouclier			= Integer.valueOf(XmlIO.getValeurElement("./bouclier", racine));
 			armure				= Integer.valueOf(XmlIO.getValeurElement("./armure", racine));
+			
+			tokenFileName		= XmlIO.getValeurElement("./token", racine);
 					
-			Ennemi	e = new Ennemi(nom, origine, niv_attribut, endurance, haine, parade, bouclier, armure);
-			Env.bdd.ajouteEnemi(e);
+			Ennemi	e = new Ennemi(nom, tokenFileName, origine, niv_attribut, endurance, haine, parade, bouclier, armure);
+			Env.bdd.ajouteEnnemi(e);
 		}
 	}
 }

@@ -3,18 +3,26 @@ package ihm;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
+import java.io.File;
 
 import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
 
+import app.Env;
+import outils.images.ImageJdr;
+
 public class Token extends JInternalFrame {
 	private static final long serialVersionUID = 338578916173833956L;
 
-	protected	JPanel	panel;
+	protected	JPanel		panel;
+	protected	ImageJdr	imageToken;
+	
 
-	public Token() {
+	public Token(String nom, String nomFichierImage) {
 		super();
+		
+		this.imageToken		= new ImageJdr(nom, Env.rep_tokens + File.separator + nomFichierImage);
 		
 		setIconifiable(false);
 		setClosable(false);
@@ -28,6 +36,15 @@ public class Token extends JInternalFrame {
 		gereComportement();
 	}
 	
+	
+	public ImageJdr getImageToken() {
+		return imageToken;
+	}
+	public void setImageToken(ImageJdr imageToken) {
+		this.imageToken = imageToken;
+	}
+
+
 	protected void afficheInfosDebut() {
 		panel = new JPanel();
 		panel.setLayout(null);

@@ -13,7 +13,7 @@ public class TokenEtre extends Token {
 	private	JLabel	lbNom;		// Nom affiché
 
 	public TokenEtre(Etre etre) {
-		super();
+		super(etre.getNom(), etre.getNomFichierToken());
 		this.etre = etre;
 	}
 	

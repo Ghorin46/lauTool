@@ -9,8 +9,8 @@ public class Ennemi extends Etre {
 	private int bouclier;
 	private int armure;
 	
-	public Ennemi(String nom, String origine, int niveau_atrribut, int endurance, int haine, int parade, int bouclier, int armure) {
-		super(nom);
+	public Ennemi(String nom, String nomFichierToken, String origine, int niveau_atrribut, int endurance, int haine, int parade, int bouclier, int armure) {
+		super(nom, nomFichierToken);
 		this.origine = origine;
 		this.niveau_atrribut = niveau_atrribut;
 		this.endurance = endurance;
