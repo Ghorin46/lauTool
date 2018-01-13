@@ -1,11 +1,15 @@
 package ihm;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import javax.swing.JLabel;
 
 import app.Env;
 import data.etre.Etre;
 
-public class TokenEtre extends Token {
+public abstract class TokenEtre extends Token {
 	private static final long serialVersionUID = 1734220030547645104L;
 
 	private	Etre	etre;
@@ -17,17 +21,57 @@ public class TokenEtre extends Token {
 		this.etre = etre;
 	}
 	
+	@Override
+	public void paint(Graphics g) {
+		Graphics2D g2d = (Graphics2D)g;
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+		
+		// ----------------------------------------
+		// COULEUR DE HIGHLIGHT
+		// ----------------------------------------
+		if(highlight)
+			g2d.setColor(token_color);
+		else
+			g2d.setColor(Color.BLACK);
+
+		// ----------------------------------------
+		// DESSINER L'IMAGE
+		// ----------------------------------------
+		g2d.drawImage(imageToken.getImage(), 0, 0, null);
+		
+		// ----------------------------------------
+		// CONTOUR DE L'IMAGE
+		// ----------------------------------------		
+		g.drawOval(0, 0, Env.token_image_size, Env.token_image_size);
+		
+		if(highlight) {
+			g.drawOval(1, 1, (Env.token_image_size-2), (Env.token_image_size-2));
+		}
+		
+		//if(this.panel!=null)
+			this.panel.paintComponents(g);
+	}
+
+
 
 	protected void afficheInfos() {
-		lbNom 				= new JLabel(etre.toString());
-		lbNom.setFont(Env.police_defaut);
+		lbNom = new JLabel(etre.toString());
+		
+		lbNom.setToolTipText(etre.getNom());
+		
+//		@SuppressWarnings("rawtypes")
+//		Map attributes = Env.police_token_titre.getAttributes();
+//		attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+//		lbNom.setFont(Env.police_token_titre.deriveFont(attributes));
+
+		lbNom.setFont(Env.police_token_titre);
+		
 		int taille_texte 	= lbNom.getFont().getSize() * lbNom.getText().length();	// Taille du texte en pixels
-		//int	texte_pos_x		= (fenetre_diametre/2)-(taille_texte/4)-5;
-		//if(texte_pos_x<0)	texte_pos_x=1;
 		lbNom.setAlignmentX(JLabel.CENTER);
 		lbNom.setAlignmentY(JLabel.CENTER);
-		lbNom.setBounds(5, 5, taille_texte, 20);
-		//lbNom.setBounds(5, 5, 200, 40);
+	//	lbNom.setBounds(1, Env.token_size-Env.token_texte_hauteur, taille_texte, Env.token_texte_hauteur);
+		lbNom.setBounds(Env.token_image_size+2, 1, taille_texte, Env.token_texte_hauteur);
 
 		panel.add(lbNom);
 	}
@@ -39,4 +83,7 @@ public class TokenEtre extends Token {
 	public void setEtre(Etre etre) {
 		this.etre = etre;
 	}
+
+	public abstract void setTokenColor();
+
 }

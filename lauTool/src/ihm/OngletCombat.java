@@ -64,13 +64,19 @@ public class OngletCombat extends JPanel {
 		panelCentre	= new JPanelImage(imagePosturesCombat);
 		panelCentre.setLayout(null);
 		
-		Token token = new TokenEtreEnnemi(Env.bdd.getListeEtreEnemmi().get(0));
-		token.setBounds(50, 50, 200, 200);
-		panelCentre.add(token);
-		token.setVisible(true);
-		token.setEnabled(true);
-		token.setSize(200, 200);
-
+		for(int i =0; i<6; i++) {
+			Token token = new TokenEtreEnnemi(Env.bdd.getListeEtreEnemmi().get(i));
+			token.setBounds(50, 50, Env.token_size_longueur, Env.token_size_hauteur);
+			panelCentre.add(token);
+			token.setVisible(true);
+			token.setEnabled(true);
+		}
+		
+		Token tokenPJ = new TokenEtrePJ(Env.bdd.getListeEtrePJ().get(0));
+		tokenPJ.setBounds(50, 50, Env.token_size_longueur, Env.token_size_hauteur);
+		panelCentre.add(tokenPJ);
+		tokenPJ.setVisible(true);
+		tokenPJ.setEnabled(true);
 		
 		this.add(panelCentre, BorderLayout.CENTER);
 		

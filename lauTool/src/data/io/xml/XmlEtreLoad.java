@@ -12,6 +12,7 @@ import org.xml.sax.SAXException;
 
 import app.Env;
 import data.etre.Ennemi;
+import data.etre.PJ;
 import outils.io.XmlIO;
 
 public class XmlEtreLoad {
@@ -39,13 +40,6 @@ public class XmlEtreLoad {
 	public static void chargerEtre(org.jdom.Element racine) throws ParserConfigurationException, SAXException, IOException, JDOMException {
 		String	nom				= "";
 		String	type			= "";
-		String	origine			= "";
-		int		niv_attribut	= 0;
-		int		endurance		= 0;
-		int		haine			= 0;
-		int		parade			= 0;
-		int		bouclier		= 0;
-		int		armure			= 0;
 		String	tokenFileName	= "";
 
 		nom						= XmlIO.getValeurElement("./@nom", racine);
@@ -54,9 +48,15 @@ public class XmlEtreLoad {
 		if(Env.debug)			System.out.println("Etre : " + nom + " (" + type + ")");
 		
 		if(type.equals("Ennemi")) {
-			
-			origine				= XmlIO.getValeurElement("./@origine", racine);
-			
+			String	origine			= "";
+			int		niv_attribut	= 0;
+			int		endurance		= 0;
+			int		haine			= 0;
+			int		parade			= 0;
+			int		bouclier		= 0;
+			int		armure			= 0;
+
+			origine				= XmlIO.getValeurElement("./origine", racine);
 			niv_attribut		= Integer.valueOf(XmlIO.getValeurElement("./niv_atrribut", racine));
 			endurance			= Integer.valueOf(XmlIO.getValeurElement("./endurance", racine));
 			haine				= Integer.valueOf(XmlIO.getValeurElement("./haine", racine));
@@ -68,6 +68,17 @@ public class XmlEtreLoad {
 					
 			Ennemi	e = new Ennemi(nom, tokenFileName, origine, niv_attribut, endurance, haine, parade, bouclier, armure);
 			Env.bdd.ajouteEnnemi(e);
+			
+		} else if(type.equals("PJ")) {
+			String	culture			= XmlIO.getValeurElement("./culture", racine);
+			int		endurance		= Integer.valueOf(XmlIO.getValeurElement("./endurance", racine));
+			int		espoir			= Integer.valueOf(XmlIO.getValeurElement("./espoir", racine));
+			
+			tokenFileName			= XmlIO.getValeurElement("./token", racine);
+			
+			PJ e = new PJ(nom, tokenFileName, culture, endurance, espoir);
+			Env.bdd.ajoutePJ(e);
+
 		}
 	}
 }

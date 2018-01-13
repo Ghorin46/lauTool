@@ -2,13 +2,13 @@ package ihm;
 
 
 import app.Env;
-import data.etre.Ennemi;
+import data.etre.PJ;
 
-public class TokenEtreEnnemi extends TokenEtre {
+public class TokenEtrePJ extends TokenEtre {
 	private static final long serialVersionUID = -4486707009579163967L;
 	
 	
-	public TokenEtreEnnemi(Ennemi etre) {
+	public TokenEtrePJ(PJ etre) {
 		super(etre);
 		
 		afficheInfos();
@@ -24,6 +24,6 @@ public class TokenEtreEnnemi extends TokenEtre {
 
 	@Override
 	public void setTokenColor() {
-		token_color	= Env.token_color_ennemi;
+		token_color	= Env.token_color_pj;
 	}
 }

@@ -60,19 +60,12 @@ public class Bureau extends JFrame {
 		
 		onglet_6.setBackground(Env.desktop_couleur_fond);
 
-		Token token = new TokenEtreEnnemi(Env.bdd.getListeEtreEnemmi().get(0));
-		onglet_6.add(token);
-		token.setVisible(true);
-		token.setEnabled(true);
-		token.setSize(200, 200);
-		
-
-		
 		onglets.setVisible(true);
 		onglets.setOpaque(true);
 		onglets.setTabLayoutPolicy(JTabbedPane.WRAP_TAB_LAYOUT);
 		getContentPane().add(onglets);
 
+		this.repaint();
 	}
 	
 	private void gererFermeture() {
