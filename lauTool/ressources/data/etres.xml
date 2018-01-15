@@ -1,66 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <etres>
-	<ennemis>
-		<etre nom="Uruk Noir" type="Ennemi">
-			<origine>Mordor</origine>
-			<niv_atrribut>5</niv_atrribut>
-			<endurance>20</endurance>
-			<haine>4</haine>
-			<parade>5</parade>
-			<bouclier>2</bouclier>
-			<armure>2</armure>
-			<token>orc_1.png</token>
-		</etre> 
-		<etre nom="Messager de Lugburz" type="Ennemi">
-			<origine>Mordor</origine>
-			<niv_atrribut>4</niv_atrribut>
-			<endurance>18</endurance>
-			<haine>5</haine>
-			<parade>4</parade>
-			<bouclier>0</bouclier>
-			<armure>2</armure>
-			<token>orc_1.png</token>
-		</etre> 
-		<etre nom="Chef Orc" type="Ennemi">
-			<origine>Monts Brumeux</origine>
-			<niv_atrribut>5</niv_atrribut>
-			<endurance>20</endurance>
-			<haine>5</haine>
-			<parade>4</parade>
-			<bouclier>3</bouclier>
-			<armure>3</armure>
-			<token>orc_1.png</token>
-		</etre> 
-		<etre nom="Archer Gobelin" type="Ennemi">
-			<origine>Monts Brumeux</origine>
-			<niv_atrribut>2</niv_atrribut>
-			<endurance>8</endurance>
-			<haine>1</haine>
-			<parade>2</parade>
-			<bouclier>0</bouclier>
-			<armure>2</armure>
-			<token>orc_1.png</token>
-		</etre> 
-		<etre nom="Garde Orc" type="Ennemi">
-			<origine>Monts Brumeux</origine>
-			<niv_atrribut>4</niv_atrribut>
-			<endurance>16</endurance>
-			<haine>3</haine>
-			<parade>4</parade>
-			<bouclier>2</bouclier>
-			<armure>2</armure>
-			<token>orc_1.png</token>
-		</etre> 
-		<etre nom="Soldat Orc" type="Ennemi">
-			<origine>Monts Brumeux</origine>
-			<niv_atrribut>3</niv_atrribut>
+	<pjs>
+		<etre nom="Ostolinde" type="PJ">
+			<culture></culture>
 			<endurance>12</endurance>
-			<haine>1</haine>
-			<parade>3</parade>
-			<bouclier>1</bouclier>
-			<armure>3</armure>
-			<token>orc_1.png</token>
+			<espoir>2</espoir>
+			<token>dwarf_1_</token>
 		</etre> 
+	</pjs>
+	<ennemis>
 		<etre nom="Attercop" type="Ennemi">
 			<origine>Forêt Noire</origine>
 			<niv_atrribut>3</niv_atrribut>
@@ -69,7 +17,13 @@
 			<parade>4</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>attercop_1_</token>
+			<capacites>
+				<capacite_speciale nom="Force effroyable"/>
+				<capacite_speciale nom="Voix impérieuse"/>
+				<capacite_speciale nom="Résistance abominable"/>
+				<capacite_speciale nom="Grande taille"/>
+			</capacites>
 		</etre> 
 		<etre nom="Grande Araignée" type="Ennemi">
 			<origine>Forêt Noire</origine>
@@ -79,7 +33,67 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
+		</etre> 
+		<etre nom="Uruk Noir" type="Ennemi">
+			<origine>Mordor</origine>
+			<niv_atrribut>5</niv_atrribut>
+			<endurance>20</endurance>
+			<haine>4</haine>
+			<parade>5</parade>
+			<bouclier>2</bouclier>
+			<armure>2</armure>
+			<token>orc_1_</token>
+		</etre> 
+		<etre nom="Messager de Lugburz" type="Ennemi">
+			<origine>Mordor</origine>
+			<niv_atrribut>4</niv_atrribut>
+			<endurance>18</endurance>
+			<haine>5</haine>
+			<parade>4</parade>
+			<bouclier>0</bouclier>
+			<armure>2</armure>
+			<token>orc_1_</token>
+		</etre> 
+		<etre nom="Chef Orc" type="Ennemi">
+			<origine>Monts Brumeux</origine>
+			<niv_atrribut>5</niv_atrribut>
+			<endurance>20</endurance>
+			<haine>5</haine>
+			<parade>4</parade>
+			<bouclier>3</bouclier>
+			<armure>3</armure>
+			<token>orc_1_</token>
+		</etre> 
+		<etre nom="Archer Gobelin" type="Ennemi">
+			<origine>Monts Brumeux</origine>
+			<niv_atrribut>2</niv_atrribut>
+			<endurance>8</endurance>
+			<haine>1</haine>
+			<parade>2</parade>
+			<bouclier>0</bouclier>
+			<armure>2</armure>
+			<token>gobelin_1_</token>
+		</etre> 
+		<etre nom="Garde Orc" type="Ennemi">
+			<origine>Monts Brumeux</origine>
+			<niv_atrribut>4</niv_atrribut>
+			<endurance>16</endurance>
+			<haine>3</haine>
+			<parade>4</parade>
+			<bouclier>2</bouclier>
+			<armure>2</armure>
+			<token>orc_1_</token>
+		</etre> 
+		<etre nom="Soldat Orc" type="Ennemi">
+			<origine>Monts Brumeux</origine>
+			<niv_atrribut>3</niv_atrribut>
+			<endurance>12</endurance>
+			<haine>1</haine>
+			<parade>3</parade>
+			<bouclier>1</bouclier>
+			<armure>3</armure>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Troll des Cavernes" type="Ennemi">
 			<origine></origine>
@@ -89,7 +103,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Troll des Collines" type="Ennemi">
 			<origine></origine>
@@ -99,7 +113,7 @@
 			<parade>5</parade>
 			<bouclier>1</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Chef Troll des Collines" type="Ennemi">
 			<origine></origine>
@@ -109,7 +123,7 @@
 			<parade>6</parade>
 			<bouclier>1</bouclier>
 			<armure>4</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Troll des Montagnes" type="Ennemi">
 			<origine></origine>
@@ -119,7 +133,7 @@
 			<parade>7</parade>
 			<bouclier>0</bouclier>
 			<armure>4</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Troll de Pierre" type="Ennemi">
 			<origine></origine>
@@ -129,7 +143,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Warg" type="Ennemi">
 			<origine></origine>
@@ -139,7 +153,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Warg Chef de Meute" type="Ennemi">
 			<origine></origine>
@@ -149,7 +163,7 @@
 			<parade>6</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Molosse de Sauron" type="Ennemi">
 			<origine></origine>
@@ -159,7 +173,7 @@
 			<parade>6</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Loup-Garou" type="Ennemi">
 			<origine>Forêt Noire</origine>
@@ -169,7 +183,7 @@
 			<parade>9</parade>
 			<bouclier>0</bouclier>
 			<armure>4</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Grande Chauve-Souris" type="Ennemi">
 			<origine></origine>
@@ -179,7 +193,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Ombre Secrète" type="Ennemi">
 			<origine></origine>
@@ -189,7 +203,7 @@
 			<parade>7</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="HobGobelin" type="Ennemi">
 			<origine>Marais de la Forêt Noire</origine>
@@ -199,7 +213,7 @@
 			<parade>4</parade>
 			<bouclier>3</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Macrale" type="Ennemi">
 			<origine>Marais de la Forêt Noire</origine>
@@ -209,7 +223,7 @@
 			<parade>4</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Ogre des Marais" type="Ennemi">
 			<origine>Marais de la Forêt Noire</origine>
@@ -219,7 +233,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Etre des Marais" type="Ennemi">
 			<origine>Marais de la Forêt Noire</origine>
@@ -229,7 +243,7 @@
 			<parade>4</parade>
 			<bouclier>0</bouclier>
 			<armure>3</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 		<etre nom="Lézard Géant des Marais" type="Ennemi">
 			<origine>Marais de la Forêt Noire</origine>
@@ -239,7 +253,7 @@
 			<parade>5</parade>
 			<bouclier>0</bouclier>
 			<armure>2</armure>
-			<token>orc_1.png</token>
+			<token>orc_1_</token>
 		</etre> 
 	</ennemis>
 </etres>

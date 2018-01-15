@@ -54,10 +54,12 @@ public class Env {
 	// FICHIERS DE DONNEES
 	// ============================================================
 	public	static	String		data_fichier_etres;
+	public	static	String		data_fichier_capacites;
 
 	static {
 		// FICHIERS DE DONNEES
 		data_fichier_etres		= rep_data + File.separator + "etres.xml";
+		data_fichier_capacites	= rep_data + File.separator + "capacites.xml";
 
 	}
 	

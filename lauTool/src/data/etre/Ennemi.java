@@ -1,5 +1,9 @@
 package data.etre;
 
+import java.util.List;
+
+import data.Capacite;
+
 public class Ennemi extends Etre {
 	private String origine;
 	private	int	niveau_atrribut;
@@ -9,7 +13,9 @@ public class Ennemi extends Etre {
 	private int bouclier;
 	private int armure;
 	
-	public Ennemi(String nom, String nomFichierToken, String origine, int niveau_atrribut, int endurance, int haine, int parade, int bouclier, int armure) {
+	private	List<Capacite>	listeCapacitesSpeciales;
+	
+	public Ennemi(String nom, String nomFichierToken, String origine, int niveau_atrribut, int endurance, int haine, int parade, int bouclier, int armure, List<Capacite> listeCapacitesSpeciales) {
 		super(nom, nomFichierToken);
 		this.origine = origine;
 		this.niveau_atrribut = niveau_atrribut;
@@ -18,7 +24,15 @@ public class Ennemi extends Etre {
 		this.parade = parade;
 		this.bouclier = bouclier;
 		this.armure = armure;
+		
+		this.listeCapacitesSpeciales = listeCapacitesSpeciales;
 	}
+
+	
+	public List<Capacite> getListeCapacitesSpeciales() {
+		return listeCapacitesSpeciales;
+	}
+
 
 	public String getOrigine() {
 		return origine;

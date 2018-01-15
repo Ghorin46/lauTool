@@ -12,7 +12,7 @@ import data.etre.Etre;
 public abstract class TokenEtre extends Token {
 	private static final long serialVersionUID = 1734220030547645104L;
 
-	private	Etre	etre;
+	protected	Etre	etre;
 
 	private	JLabel	lbNom;		// Nom affiché
 
@@ -49,11 +49,24 @@ public abstract class TokenEtre extends Token {
 			g.drawOval(1, 1, (Env.token_image_size-2), (Env.token_image_size-2));
 		}
 		
+		ajouteBulles(g, g2d);
+		
 		//if(this.panel!=null)
 			this.panel.paintComponents(g);
 	}
 
+	public abstract void ajouteBulles(Graphics g, Graphics2D g2d);
+	public abstract void ajouteInfosDetaillees();
 
+
+	protected void paintBulle(Graphics g, Graphics2D g2d, String titre, int valeur, int posX, int posY) {
+		Color	currentColor	= g2d.getColor();
+		g2d.setColor(token_color);
+
+		g.drawOval(posX, posY, 30, 30);
+		
+		g2d.setColor(currentColor);
+	}
 
 	protected void afficheInfos() {
 		lbNom = new JLabel(etre.toString());
@@ -74,6 +87,9 @@ public abstract class TokenEtre extends Token {
 		lbNom.setBounds(Env.token_image_size+2, 1, taille_texte, Env.token_texte_hauteur);
 
 		panel.add(lbNom);
+		
+		ajouteInfosDetaillees();
+
 	}
 
 	

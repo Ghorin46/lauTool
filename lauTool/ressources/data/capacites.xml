@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capacites_speciales>
+	<capacite_speciale nom="Abomination">
+		<cout>0</cout>
+		<effet>Tous les héros doivent faire un Test de Peur SR 14 au début de chaque round jusqu’à ce qu’ils ratent (et en subissent les effets) ou qu’ils obtiennent un succès supérieur ou extraordinaire.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Acharnement">
+		<cout>1</cout>
+		<effet>Si l’attaque principale a touché avec un succès supérieur ou extraordinaire, la creature effectue aussitôt une seconde attaque contre la même cible avec son arme principale.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Animosité (culture)">
+		<cout>0</cout>
+		<effet>Confrontée à l’objet de son animosité, les compétences d’armes et autres attaques sont considérées comme favorites.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Assaut brutal">
+		<cout>1</cout>
+		<effet>Si l’attaque principale de la créature obtient un succès supérieur ou extraordinaire, elle effectue immédiatement une 2nde attaque contre la même cible avec son arme secondaire.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Attaque plongeante">
+		<cout>0</cout>
+		<effet>Les créatures peuvent choisir leur cible au début de chaque round (même si elles sont en nombre inférieur) et peuvent attaquer n’importe quel héros en n’importe quelle position de combat et peuvent abandonner le combat en début de round.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Autochtone">
+		<cout>0</cout>
+		<effet>En cas de combat dans sa région de prédilection, la valeur de Parade est doublée pour la créature.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Aversion au soleil">
+		<cout>0</cout>
+		<effet>En cas de combat exposé au soleil, la créature perd un point de Haine à la fin du premier round.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Cuir robuste">
+		<cout>0</cout>
+		<effet>Si la créature obtient un succès supérieur ou extraordinaire lors d’un Test de Protection, l’attaquant lâche son arme (récupérable en 1 action complète)</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Déconcertant">
+		<cout>1</cout>
+		<effet>Le SR pour toucher un compagnon pendant le round est limité au SR de la position de combat (pas de prise en compte de la Parade)</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Dwimmerlaik">
+		<cout>0</cout>
+		<effet>[Spectre de l’Anneau] Un compagnon qui touche un Spectre de l’Anneau avec un coup performant par une arme de corps à corps doit effectuer un test de Vaillance. En cas d’échec, l’arme se brise et le compagnon perd un nombre de points d’Endurance égal au niveau d’Attribut du Spectre de l’Anneau. De plus, le compagnon a été exposé au Souffle Noir (voir capacité dans ce tableau)</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Effroi">
+		<cout>1</cout>
+		<effet>Tous les compagnons effectuent un Test de Peur SR 14</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Epouvantables sortilèges">
+		<cout>1</cout>
+		<effet>Le compagnon cible fait un Test de Corruption. En cas d’échec, il gagne 1 point d’Ombre et subit les effets du sort spécifique de la créature.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Etreinte">
+		<cout>0</cout>
+		<effet>Si l’attaque principale de la créature a touché, la victime ne peut pas changer de position de combat et voit sa valeur de parade divisée par 2 (arrondie au supérieur). La créature qui étreint ne peut plus utiliser son attaque principale tant qu’elle retient sa cible mais peut utiliser son attaque secondaire si elle en a une.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Force effroyable">
+		<cout>1</cout>
+		<effet>En cas d’attaque réussie, la perte d’endurance de la cible est augmentée de la valeur d’Attribut de la créature.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Grand bond">
+		<cout>1</cout>
+		<effet>La créature peut attaquer n’importe quel compagnon quelle que soit sa position.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Grande taille">
+		<cout>0</cout>
+		<effet>La créature se bat même si son Endurance = 0 et même si elle est blessée. Jusqu’à ce qu’elle soit blessée à nouveau ou est 0 en Endurance ET est blessée.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Habitant des ténèbres">
+		<cout>0</cout>
+		<effet>Dans l’obscurité, le niveau d’Attribut de la créature est doublé.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Lâcheté">
+		<cout>0</cout>
+		<effet>Si la créature n’a plus de point de haine en fin de round, elle s’enfuit.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Mot de Puissance et de Terreur">
+		<cout>1</cout>
+		<effet>Quand un compagnon dépense des points d’Espoir pour invoquer un bonus d’Attribut ou pour activer une Vertu, la créature dépense autant de point de Haine pour annuler l’effet attendu par le compagnon. Les points d’Espoir sont perdus.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Pas de quartier">
+		<cout>1</cout>
+		<effet>Si la créature vient de mettre hors de combat un personnage, elle peut effectuer immédiatement une autre attaque avec son arme secondaire. En cas de succès supérieur ou extraordinaire, la cible est tuée sur le coup.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Peur du feu">
+		<cout>0</cout>
+		<effet>Face à un adversaire portant une torche ou tout autre objet enflammé, la créature perd un point de haine à la fin du 1er round de combat.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Peur Noire">
+		<cout>0</cout>
+		<effet>Lorsqu’un compagnon doit faire un test de Peur face à une telle créature, il lance 2 fois le dé du Destin et garde le moins bon résultat.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Plus noir que les Ténèbres">
+		<cout>1</cout>
+		<effet>La créature invoque des ténèbres surnaturelles. Tous les compagnons font un test de Sagesse (SR 14). Ceux qui échouent ne voient rien et sont gravement gênés dans leurs actions (SR-4 en défense, SR+4 en attaque). Les torches et autres sources de lumière ne sont d’aucune utilité.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Point faible">
+		<cout>0</cout>
+		<effet>Quand la créature fait un coup précis ou dépense un point de haine, elle expose son point faible pour la prochaine attaque des compagnons. Si elle est alors touché par un coup performant, son test de Protection est effectué avec la valeur réduite d’Armure (valeur avec * dans son profil).</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Puanteur fétide">
+		<cout>0</cout>
+		<effet>Tout héros engagé avec la créature doit dépenser un point d’Espoir pour effectuer une action autre qu’une attaque (y compris un manœuvre de combat)</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Résistance abominable">
+		<cout>1</cout>
+		<effet>En cas d’attaque adverse réussie, la perte d’Endurance est réduite du niveau d’Attribut de la créature.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Souffle Noir">
+		<cout>0</cout>
+		<effet>[Nazgûl] Quiconque s’approche d’un Nazgûl doit effectuer un test de Corruption SR 10 + niveau d’Attribut du plus puissant des Nazgûl présents + 1 par Nazgûl présent (au-delà du 1er). En cas d’échec, le compagnon reçoit un point d’Ombre et perd connaissance.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Visions de Tourment">
+		<cout>1</cout>
+		<effet>Le compagnon ayant raté un test de Peur perd en plus des points d’Endurance égal au double de sa valeur d’Ombre (minimum 2).</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Vitesse du serpent">
+		<cout>1</cout>
+		<effet>En cas d’attaque d’un adversaire, la valeur de Parade (hors bouclier) de la créature est doublée.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Voix funeste">
+		<cout>1</cout>
+		<effet>[Nazgûl] Lorsqu’un Nazgûl pousse son cri, chaque compagnon fait un test de Peur. En cas d’échec, le compagnon se retrouve épuisé. L’effet s’arrête dès que le Nazgûl n’est plus présent.</effet>
+	</capacite_speciale>
+	<capacite_speciale nom="Voix impérieuse">
+		<cout>1</cout>
+		<effet>Toutes les créatures du même type regagnent un point de haine (sauf la créature qui a utilisé cette capacité).</effet>
+	</capacite_speciale>
+</capacites_speciales>
+

@@ -1,6 +1,7 @@
 package data.io.xml;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import org.jdom.xpath.XPath;
 import org.xml.sax.SAXException;
 
 import app.Env;
+import data.Capacite;
 import data.etre.Ennemi;
 import data.etre.PJ;
 import outils.io.XmlIO;
@@ -55,6 +57,8 @@ public class XmlEtreLoad {
 			int		parade			= 0;
 			int		bouclier		= 0;
 			int		armure			= 0;
+			
+			ArrayList<Capacite>	listeCapacites	= null;
 
 			origine				= XmlIO.getValeurElement("./origine", racine);
 			niv_attribut		= Integer.valueOf(XmlIO.getValeurElement("./niv_atrribut", racine));
@@ -65,8 +69,10 @@ public class XmlEtreLoad {
 			armure				= Integer.valueOf(XmlIO.getValeurElement("./armure", racine));
 			
 			tokenFileName		= XmlIO.getValeurElement("./token", racine);
-					
-			Ennemi	e = new Ennemi(nom, tokenFileName, origine, niv_attribut, endurance, haine, parade, bouclier, armure);
+			
+			listeCapacites		= getListeCapacites(racine);
+			
+			Ennemi	e = new Ennemi(nom, tokenFileName, origine, niv_attribut, endurance, haine, parade, bouclier, armure, listeCapacites);
 			Env.bdd.ajouteEnnemi(e);
 			
 		} else if(type.equals("PJ")) {
@@ -80,5 +86,30 @@ public class XmlEtreLoad {
 			Env.bdd.ajoutePJ(e);
 
 		}
+	}
+	
+	private static ArrayList<Capacite> getListeCapacites(org.jdom.Element racine) throws JDOMException {
+		ArrayList<Capacite>	listeCapacites	= new ArrayList<Capacite>();
+
+		String				nom		= "";
+
+		Iterator<?>			it		= null;
+		org.jdom.Element	noeud	= null;
+		List<?>				liste	= null;
+		XPath 				xpa		= null;
+
+		xpa		= XPath.newInstance("//capacite_speciale");
+		liste	= xpa.selectNodes(racine) ;
+		it		= liste.iterator();
+		while(it.hasNext()) {
+			noeud 		= (org.jdom.Element) it.next();
+			nom			= XmlIO.getValeurElement("./@nom", noeud);
+			
+			Capacite capaciteSpeciale	= Env.bdd.getCapaciteSpeciale(nom);
+			if(capaciteSpeciale!=null)
+				listeCapacites.add(capaciteSpeciale);
+		}
+		
+		return listeCapacites;
 	}
 }
