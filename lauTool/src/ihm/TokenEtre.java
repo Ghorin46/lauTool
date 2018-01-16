@@ -63,7 +63,7 @@ public abstract class TokenEtre extends Token {
 		Color	currentColor	= g2d.getColor();
 		g2d.setColor(token_color);
 
-		g.drawOval(posX, posY, 30, 30);
+		g.drawOval(posX, posY, 20, 20);
 		
 		g2d.setColor(currentColor);
 	}

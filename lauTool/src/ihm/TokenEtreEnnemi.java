@@ -32,7 +32,7 @@ public class TokenEtreEnnemi extends TokenEtre {
 
 	@Override
 	public void ajouteBulles(Graphics g, Graphics2D g2d) {
-		paintBulle(g, g2d, "Niv Attr", ((Ennemi)etre).getNiveau_atrribut(), 1, 1);
+		paintBulle(g, g2d, "Niv Attr", ((Ennemi)etre).getNiveau_atrribut(), Env.token_image_size+2, Env.token_texte_hauteur+5);
 	}
 
 	@Override
